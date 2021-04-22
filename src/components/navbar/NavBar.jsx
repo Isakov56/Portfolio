@@ -1,7 +1,11 @@
 import React from 'react'
 import './navbar.scss'
+import {useHistory} from "react-router-dom"
+
 
 export default function NavBar() {
+    
+
     return (
         <div>
             <div className='d-flex align-items-center'>
