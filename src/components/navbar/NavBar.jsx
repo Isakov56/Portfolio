@@ -1,33 +1,40 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './navbar.scss'
-import {useHistory} from "react-router-dom"
+import {useLocation} from "react-router-dom"
 import {Nav, Navbar, Form, Button, FormControl} from "react-bootstrap"
 
 
 export default function NavBar() {
-
-
+    const location = useLocation()
+    const [effectHome, setEffectHome] = useState(false)
+    const [effectFeatures, setEffectFeatures] = useState(false)
+    const [effectPricing, setEffectPricing] = useState(false)
+    const effectHomeHandler = () => {
+        effectHome ? setEffectHome(false) : setEffectHome(true)
+    }
+    const effectFeaturesHandler = () => {
+        effectFeatures ? setEffectFeatures(false) : setEffectFeatures(true)
+    }
+    const effectPricingHandler = () => {
+        effectPricing ? setEffectPricing(false) : setEffectPricing(true)
+    }
     return (
         <div>
 
             <Navbar bg="light" variant="light" className="p-0 bg-transparent">
-                <Navbar.Brand href="#home" className="name text-light p-2 px-3 font-weight-bold">N. Surname</Navbar.Brand>
+                <Navbar.Brand href="#home" className="name text-light py-3 px-3 font-weight-bold mr-2">K. Isakov</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="#home" className="">
-                        <div className='bg-primary'>Home</div>
+                        <div className={`${location.hash === '#home' ? "my-active" : ""} pl-3 m-0 `} onClick={()=> effectHomeHandler()} >Home</div>
                     </Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <Nav.Link href="#features" >
+                        <div className={`${location.hash === '#features' ? "my-active" : ""} pl-3 m-0` } onClick={()=> effectFeaturesHandler()}>Features</div>
+                    </Nav.Link>
+                    <Nav.Link href="#pricing">
+                        <div className={`${location.hash === '#pricing' ? "my-active" : ""} pl-3 m-0` } onClick={()=> effectPricingHandler()}>Pricing</div>
+                    </Nav.Link>
                 </Nav>
             </Navbar>
-            {/* <div className='d-flex align-items-center'>
-                <h4 className="name m-0 text-light p-3 mr-4">N. Surname</h4>
-                <div className='d-flex nav-items'>
-                    <div className='mx-4'>home</div>
-                    <div className='mx-4'>projects</div>
-                    <div className='mx-4'>contact me</div>
-                </div>
-            </div> */}
         </div>
     )
 }

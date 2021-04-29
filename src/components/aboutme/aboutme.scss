@@ -1,0 +1,98 @@
+.aboutme-left{
+    height:60vh;
+    margin-left: 115.78px;
+    width: 40%;
+}
+
+.parent-div{
+    height: 520px;
+}
+
+.main-name{
+    background: linear-gradient(to bottom, transparent 60%, lightblue 0%);
+    width: 400px;
+    height: 50%;
+}
+
+.aboutme-left h6{
+    font-size: 13px;
+}
+
+.line{
+    width: 6rem;
+    height: 2px;
+    background-color: #d8d8d8;
+    margin-top: 3px;
+}
+
+.explore{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.dropdown:hover{
+    background-color: rgba(241, 241, 241, 0.623);
+}
+
+.explore:hover{
+    color: #3f3f3f !important;
+}
+
+.rounded-circle{
+    padding: 0.8px 3.5px 0 3.5px;
+    font-size:1.2rem;
+}
+
+.greyish{
+    color: #d8d8d8 !important;
+}
+
+.explore-div{
+    cursor: pointer;
+}
+
+.aboutme-contacts{
+    width: 5rem !important;
+}
+
+.aboutme-img{
+    position: relative;
+    
+}
+
+.img-placeholder{
+    width: 420px;
+    height: 520px;
+    overflow: visible;
+    position: absolute;
+    top: -30px;
+    background-color: #dcdcdc;
+}
+
+.dot-container{
+    width: 48px;
+    height: 140px;
+    z-index: 100;
+    background-color: transparent;
+    position: absolute;
+    background-image: radial-gradient(#acacac 30%, transparent 40%);
+    background-position: 0 0;
+    background-size: 4px 4px;
+    left: -49px;
+}
+
+.dot-container.right{
+    width: 24px;
+    height: 157px;
+    left: 421px;
+    bottom: 150px !important;
+}
+
+.dot-container.bottom{
+    width: 159px;
+    height: 40px;
+    left: -70px;
+    bottom: 70px !important;
+
+}
