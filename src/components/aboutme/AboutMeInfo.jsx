@@ -14,7 +14,8 @@ export default function AboutMeInfo() {
                     <h6 className="font-weight-normal my-1 text-secondary greyish">Lorem Ipsum is simply dummy text of tha galley of type and scrambled</h6>
                     <div className="d-flex align-items-center mt-3 ">
                         <div className="d-flex align-items-center explore-div">
-                            <i class="fa fa-angle-down border border-secondary greyish rounded-circle mr-2 text-secondary d-flex align-items-center justify-content-center dropdown">
+                            <i className="material-icons border border-secondary greyish rounded-circle mr-2 text-secondary d-flex align-items-center justify-content-center dropdown">
+                                keyboard_arrow_down
                             </i> 
                             <span className='explore mr-2 text-secondary greyish'>Explore me</span> 
                         </div>

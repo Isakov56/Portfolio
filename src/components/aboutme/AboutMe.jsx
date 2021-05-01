@@ -6,7 +6,7 @@ import AboutMeImg from './AboutMeImg'
 
 export default function AboutMe() {
     return (
-        <div className="d-flex alig-items-center parent-div justify-content-between">
+        <div className="d-flex alig-items-center parent-div justify-content-between border-bottom">
             <AboutMeInfo />
             <AboutMeImg />
             <AboutMeContacts />

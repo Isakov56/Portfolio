@@ -5,7 +5,8 @@
 }
 
 .parent-div{
-    height: 520px;
+    //height: 520px;
+    padding-bottom: 5rem;
 }
 
 .main-name{
@@ -21,7 +22,7 @@
 .line{
     width: 6rem;
     height: 2px;
-    background-color: #d8d8d8;
+    background-color: #dcdcdc;
     margin-top: 3px;
 }
 
@@ -33,6 +34,11 @@
 
 .dropdown:hover{
     background-color: rgba(241, 241, 241, 0.623);
+    transition: .2s;
+}
+
+.dropdown{
+    font-size: 100px;
 }
 
 .explore:hover{
@@ -40,12 +46,12 @@
 }
 
 .rounded-circle{
-    padding: 0.8px 3.5px 0 3.5px;
+    padding: 0.8px 0.8px 0 0.8px;
     font-size:1.2rem;
 }
 
 .greyish{
-    color: #d8d8d8 !important;
+    color: #dcdcdc !important;
 }
 
 .explore-div{
@@ -86,13 +92,80 @@
     width: 24px;
     height: 157px;
     left: 421px;
-    bottom: 150px !important;
+    bottom: 140px !important;
 }
 
 .dot-container.bottom{
-    width: 159px;
+    width: 169px;
     height: 40px;
-    left: -70px;
-    bottom: 70px !important;
+    left: -90px;
+    bottom: 50px !important;
 
+}
+
+.dot-container.lets-talk{
+    background-color: white;
+    border: 2px solid rgba(211, 211, 211, 0.404);
+    width: 170px;
+    background-image: none;
+    height: 52px;
+    bottom: 35px;
+    left: 350px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s;
+    color: #6c757d;
+}
+
+.dot-container.lets-talk:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.envelop{
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.aboutme-contacts .contacts-icon{
+    font-size: 15px;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.aboutme-contacts .vertical-line{
+    background-color: #dcdcdc;
+    width: 2px;
+    height: 5rem;
+}
+
+.aboutme-contacts{
+    position: relative;
+}
+
+.aboutme-contacts .list{
+    position: absolute;
+    top: -30px;
+    right: 45px;
+}
+
+.fa-facebook:hover{
+    color: #4867aa;
+    transition: .1s;
+}
+
+.fa-instagram:hover{
+    color:#f53184;
+    transition: .1s;
+}
+
+.fa-linkedin:hover{
+    color: #0077b5;
+    transition: .1s;
+}
+
+.fa-telegram:hover{
+    color: #26a6e7;
+    transition: .1s;
 }
