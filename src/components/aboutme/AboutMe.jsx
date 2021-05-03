@@ -16,7 +16,7 @@ export default function AboutMe() {
                     <AboutMeImg />
                 </div>
             </div>
-            <div className="">
+            <div className="aboutme-contacts">
                 <AboutMeContacts />
             </div>
         </div>

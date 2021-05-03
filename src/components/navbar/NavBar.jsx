@@ -24,13 +24,13 @@ export default function NavBar() {
             <Navbar bg="light" variant="light" className="p-0 bg-transparent my-nav">
                 <Navbar.Brand href="#home" className="name text-light py-3 px-3 font-weight-bold mr-2 d-flex justify-content-center">K. Isakov</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home" className="">
+                    <Nav.Link href="#home" className="link">
                         <div className={`${location.hash === '#home' ? "my-active" : ""} pl-3 m-0 `} onClick={()=> effectHomeHandler()} >Home</div>
                     </Nav.Link>
-                    <Nav.Link href="#features" >
+                    <Nav.Link href="#features" className="link" >
                         <div className={`${location.hash === '#features' ? "my-active" : ""} pl-3 m-0` } onClick={()=> effectFeaturesHandler()}>Features</div>
                     </Nav.Link>
-                    <Nav.Link href="#pricing">
+                    <Nav.Link href="#pricing" className="link">
                         <div className={`${location.hash === '#pricing' ? "my-active" : ""} pl-3 m-0` } onClick={()=> effectPricingHandler()}>Pricing</div>
                     </Nav.Link>
                 </Nav>
