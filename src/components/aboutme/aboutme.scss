@@ -289,6 +289,11 @@
         font-size: 20px;
     }
 
+    .aboutme-contacts .list{
+        top: 80px;
+        right: 35px;
+    }
+
     .aboutme-contacts{
         width: 50px !important;
     }
@@ -332,13 +337,19 @@
 }
 
 @media only screen and (max-width: 657px) {
-    .aboutme-contacts .list{
-        top: -20px;
-        right: 10px;
-    }
+    // .aboutme-contacts .list{
+    //     top: -20px;
+    //     right: 10px;
+    // }
     .my-row{
         width: 500px;
     }
+
+    .aboutme-contacts .list{
+        top: 80px;
+        right: 0px;
+    }
+
     .aboutme-img{
         // position: relative;
         margin-left: 50px;
@@ -392,6 +403,7 @@
     .my-row{
         width: 435px;
     }
+
     .main-name{
         width: 250px;
     }
@@ -433,7 +445,7 @@
         width: 129px;
         height: 28px;
         left: -50px;
-        bottom: 50px;
+        bottom: 20px;
     
     }
     
@@ -443,7 +455,7 @@
         width: 130px;
         background-image: none;
         height: 42px;
-        bottom: 44px;
+        bottom: 20px;
         right: -50px;
         text-transform: uppercase;
         font-size: 12px;
@@ -520,24 +532,11 @@
     .dot-container.bottom{
         width: 100px;
         height: 28px;
-        left: -40px;
-        bottom: 50px;
     
     }
     
     .dot-container.lets-talk{
-        background-color: white;
-        border: 2px solid rgba(211, 211, 211, 0.404);
         width: 110px;
-        background-image: none;
         height: 38px;
-        bottom: 44px;
-        right: -50px;
-        text-transform: uppercase;
-        font-size: 10px;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: .2s;
-        color: #6c757d;
     }
 }
