@@ -1,7 +1,17 @@
+
+
 .aboutme-left{
-    height:60vh;
+    // height:70vh;
+    // margin-left: 115.78px;
+    // width: 40%;
+}
+
+.aboutme-left-container{
     margin-left: 115.78px;
-    width: 40%;
+}
+
+.aboutme-img-container{
+    // margin-right: 200px !important;
 }
 
 .parent-div{
@@ -13,6 +23,10 @@
     background: linear-gradient(to bottom, transparent 60%, lightblue 0%);
     width: 400px;
     height: 50%;
+}
+
+.text{
+    width: 400px;
 }
 
 .aboutme-left h6{
@@ -63,43 +77,47 @@
 }
 
 .aboutme-img{
-    position: relative;
-    
+    // position: relative;
+    width: 636px;
+    height: 555px;
 }
 
 .img-placeholder{
-    width: 420px;
+    width: 450px;
     height: 520px;
-    overflow: visible;
-    position: absolute;
+    // overflow: visible;
+    position: relative;
     top: -30px;
     background-color: #dcdcdc;
 }
 
 .dot-container{
-    width: 48px;
-    height: 140px;
-    z-index: 100;
     background-color: transparent;
     position: absolute;
     background-image: radial-gradient(#acacac 30%, transparent 40%);
     background-position: 0 0;
     background-size: 4px 4px;
-    left: -49px;
+}
+
+.dot-container.top{
+    width: 48px;
+    height: 151px;
+    top: 30px;
+    left: -48.5px;
 }
 
 .dot-container.right{
     width: 24px;
-    height: 157px;
-    left: 421px;
-    bottom: 140px !important;
+    height: 185px;
+    right: -24.5px;
+    bottom: 160px;
 }
 
 .dot-container.bottom{
-    width: 169px;
+    width: 180px;
     height: 40px;
-    left: -90px;
-    bottom: 50px !important;
+    left: -76px;
+    bottom: 50px;
 
 }
 
@@ -109,8 +127,8 @@
     width: 170px;
     background-image: none;
     height: 52px;
-    bottom: 35px;
-    left: 350px;
+    bottom: 44px;
+    right: -110px;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
@@ -147,7 +165,7 @@
 .aboutme-contacts .list{
     position: absolute;
     top: -30px;
-    right: 45px;
+    right: 35px;
 }
 
 .fa-facebook:hover{
@@ -169,3 +187,236 @@
     color: #26a6e7;
     transition: .1s;
 }
+
+@media only screen and (max-width: 1200px) {
+    .my-row{
+        // width: 540px;
+        height: 60vh;
+    }
+    .main-name{
+        width: 300px;
+    }
+
+    .aboutme-left h1{
+        font-size: 30px;
+    }
+
+    .text{
+        width: 300px;
+    }
+
+    .aboutme-img{
+        // position: relative;
+        width: 400px;
+        height: 500px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .my-row{
+        // width: 540px;
+        height: 60vh;
+    }
+
+    .dot-container.lets-talk{
+        right: -60px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .my-row{
+        // width: 540px;
+        height: 60vh;
+    }
+
+    .aboutme-left-container{
+        height: auto;
+    }
+
+    .main-name{
+        width: 250px;
+    }
+
+
+    .aboutme-left h1{
+        font-size: 25px;
+    }
+
+    .text{
+        width: 250px;
+    }
+
+    .aboutme-img{
+        // position: relative;
+        width: 350px;
+        height: 450px;
+        margin-right: 300px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+
+    .aboutme-left-container{
+        height: auto;
+    }
+
+    .main-name{
+        width: 250px;
+    }
+
+    .aboutme-left h1{
+        font-size: 25px;
+    }
+
+    .text{
+        width: 250px;
+    }
+
+    .aboutme-img{
+        // position: relative;
+        width: 330px;
+        height: 430px;
+        margin-right: 300px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 991.5px) {
+    .main-name{
+        width: 400px;
+    }
+
+    .aboutme-left h1{
+        font-size: 40px;
+    }
+
+    .text{
+        width: 400px;
+    }
+
+    .aboutme-img{
+        // position: relative;
+        width: 550px;
+        height: 580px;
+        margin-right: 300px;
+        margin-top: 50px;
+    }
+
+    .my-row{
+        width: 600px;
+        height: auto;
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .dot-container.lets-talk{
+        right: -45px;
+    }
+}
+
+@media only screen and (max-width: 717px) {
+    .my-row{
+        width: 540px;
+    }
+}
+
+@media only screen and (max-width: 657px) {
+    .my-row{
+        width: 500px;
+    }
+    .aboutme-img{
+        // position: relative;
+        margin-left: 50px;
+        width: 400px;
+        height: 510px;
+        margin-right: 300px;
+    }
+}
+
+@media only screen and (max-width: 617px){
+    .my-row{
+        width: 480px;
+    }
+    .main-name{
+        width: 300px;
+    }
+
+    .aboutme-left h1{
+        font-size: 30px;
+    }
+
+    .text{
+        width: 300px;
+    }
+    .aboutme-img{
+        // position: relative;
+        margin-left: 50px;
+        width: 380px;
+        height: 480px;
+        margin-right: 300px;
+    }
+
+    .dot-container.lets-talk{
+        right: -40px;
+    }
+
+    .dot-container.bottom{
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 597px){
+    .my-row{
+        width: 435px;
+    }
+    .main-name{
+        width: 250px;
+    }
+
+    .aboutme-left h1{
+        font-size: 25px;
+    }
+
+    .text{
+        width: 280px;
+    }
+    .aboutme-img{
+        // position: relative;
+        margin-left: 50px;
+        width: 340px;
+        height: 450px;
+        margin-right: 300px;
+    }
+}
+
+// @media only screen and (max-width: 502px){
+//     .my-row{
+//         width: 350px;
+//     }
+
+//     .aboutme-left-container{
+//         height: auto;
+//     }
+
+//     .main-name{
+//         width: 210px;
+//     }
+
+//     .aboutme-left h1{
+//         font-size: 20px;
+//     }
+
+//     .text{
+//         width: 230px;
+//     }
+//     .aboutme-img{
+//         // position: relative;
+//         margin-left: 50px;
+//         width: 235px;
+//         height: 350px;
+//         margin-right: 300px;
+//     }
+// }
