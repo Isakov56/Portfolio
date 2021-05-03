@@ -21,8 +21,8 @@ export default function NavBar() {
     return (
         <div>
 
-            <Navbar bg="light" variant="light" className="p-0 bg-transparent">
-                <Navbar.Brand href="#home" className="name text-light py-3 px-3 font-weight-bold mr-2">K. Isakov</Navbar.Brand>
+            <Navbar bg="light" variant="light" className="p-0 bg-transparent my-nav">
+                <Navbar.Brand href="#home" className="name text-light py-3 px-3 font-weight-bold mr-2 d-flex justify-content-center">K. Isakov</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="#home" className="">
                         <div className={`${location.hash === '#home' ? "my-active" : ""} pl-3 m-0 `} onClick={()=> effectHomeHandler()} >Home</div>
