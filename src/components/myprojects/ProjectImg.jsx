@@ -1,9 +1,12 @@
 import React from 'react'
+import './projectimg.scss';
 
 export default function ProjectImg() {
     return (
         <div className="m-5">
-            <div className=""></div>
+            <div className="back-img bg-secondary">
+                <div className="front-img"></div>
+            </div>
         </div>
     )
 }
