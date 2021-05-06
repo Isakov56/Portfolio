@@ -14,6 +14,8 @@ function App() {
         <Route path="/" exact component={AboutMe}/>
         <Route path="/" exact component={MyProjects}/>
         <Route path="/" exact component={ProjectImg}/>
+        <Route path="/" exact component={ProjectImg}/>
+        <Route path="/" exact component={ProjectImg}/>
       </Router>
     </div>
   );
